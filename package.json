@@ -24,8 +24,7 @@
         "node": ">=0.10"
     },
     "scripts": {
-        "test": "mocha",
-        "test2": 
+        "test": "mocha"
     },
     "devDependencies": {
         "ansi-cyan": "^0.1.1",
