@@ -1,15 +1,32 @@
-const http = require("http");
+const express = require('express');
+const exphbs  = require('express-handlebars');
+ const app = express();
+ const port = 8000;
 
-const hostname = "127.0.0.1";
-const port = 8000;
+app.engine('handlebars', exphbs.engine());
+app.set('view engine', 'handlebars');
 
-const server = http.createServer(function(req, res) {
-
-   res.writeHead(200, {'Content-Type': 'text/plain'});
-
-   res.end('Hello World\n');
+// Routing
+app.get('/', function (req, res) {
+    res.render('index');
 });
 
-server.listen(port, hostname, function() {
-   console.log(`Server running at http://${hostname}:${port}/`);
-})
+app.get('/information', function (req, res) {
+  res.render('information');
+});
+
+app.get('/rank', function (req, res) {
+  res.render('rank');
+});
+
+app.get('/agent', function (req, res) {
+  res.render('agent');
+});
+
+pp.get('/confirm', function (req, res) {
+  res.render('confirm');
+});
+
+app.listen(port, () =>{
+  console.log(`Server started on port ${port}`);
+});

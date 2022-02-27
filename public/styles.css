@@ -1,0 +1,281 @@
+/* General styling*/
+ 
+:root {
+    --primary-color: #ef4958;
+    --secondary-color: #101923;
+    --tertiary-color: #383e3a;
+    --background-color: #ebe7e1;
+}
+ 
+* {
+    display: block;
+}
+ 
+body {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-family: 'Inter';
+}
+ 
+h2 {
+    text-align: center;
+    margin-top: 15%;
+    font-weight: 800;
+    font-size: 2em;
+}
+ 
+header > img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+}
+ 
+footer > button {
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+ 
+main form label {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+ 
+ main form input {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+/*Home page*/
+ 
+#home main button {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    margin-left: 5.5em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    font-weight: 600;
+    color: var(--tertiary-color);
+}
+ 
+/* Information page*/
+ 
+#information header h2 {
+    margin-top: 0.5em;
+}
+ 
+#information header img {
+    margin-bottom: 0;
+}
+ 
+#information main form input:last-of-type {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+ 
+#information main > section h3{
+    margin-left: 21%;
+    text-align: left;
+    font-size: 16px;
+}
+ 
+.container {
+    margin-left: 19%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+ 
+#information main > section > div button {
+    background-color: transparent;
+    border: none;
+}
+ 
+#information main > section img {
+    height: 40px;
+    width: 40px;
+}
+ 
+#information footer section ul {
+    display: flex;
+    flex-direction:row;
+    gap: 1em;
+    margin-left: 2.6em;
+}
+ 
+/* Rank page*/
+ 
+#rank header img {
+    margin-top: 2em;
+    max-width: 40%;
+}
+ 
+#rank main ul {
+    display: flex;
+    gap: 0.3em;
+}
+ 
+#rank main ul li img {
+    width: 50px;
+    height: 50px;
+}
+ 
+#rank main p {
+    text-align: center;
+    font-size: 4em;
+    color: var(--tertiary-color);
+    margin-top: -0.5em;
+    margin-bottom: 0;
+}
+ 
+#rank footer {
+    margin-top: 6em;
+}
+ 
+#rank footer section ul li {
+    margin-bottom: 3em;
+}
+ 
+/* Agent page*/
+ 
+#agent header img {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+ 
+#agent header h2 {
+    font-size: 1.6em;
+}
+ 
+#agent main ul li img {
+    height: 35px;
+    width: 35px;
+    border: 0.1em solid var(--secondary-color);
+}
+ 
+#agent main ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+ 
+#agent footer ul li {
+    margin-bottom: 3em;
+}
+ 
+/* Confirm screen */
+ 
+#confirm main section h3 {
+    text-align: center;
+}
+ 
+#confirm main div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+ 
+#confirm main div img {
+    height: 50px;
+    width: 50px;
+    border: 0.15em solid var(--primary-color);
+}
+ 
+#confirm main section > img {
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+ 
+/* Progress bar */
+ 
+.container2 {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: -1.6em;
+}
+ 
+.container3 {
+    display: block;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 4%;
+}
+ 
+.progressbar {
+    counter-reset: step;
+}
+ 
+.progressbar li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+}
+ 
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    border: 2px solid var(--tertiary-color);
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+.progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: var(--tertiary-color);
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+.progressbar li:first-child:after {
+    content: none;
+}
+.progressbar li.active {
+    color: var(--primary-color);
+}
+.progressbar li.active:before {
+    border-color: var(--primary-color);
+}
+.progressbar li.active + li:after {
+    background-color: var(--primary-color);
+}
+ 
+/* Bron: http://kodhus.com/newsite/step-progress-bar-css-only/ */
