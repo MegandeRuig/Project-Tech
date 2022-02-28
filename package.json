@@ -1,25 +1,15 @@
 {
     "name": "repeat-string",
-    "description": "Repeat the given string n times. Fastest implementation for repeating a string.",
+    "description": "Json file for Valorant Matching",
     "version": "1.6.1",
-    "homepage": "https://github.com/jonschlinkert/repeat-string",
-    "author": "Jon Schlinkert (http://github.com/jonschlinkert)",
-    "contributors": [
-        "Brian Woodward <brian.woodward@gmail.com> (https://github.com/doowb)",
-        "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)",
-        "Linus Unnebäck <linus@folkdatorn.se> (http://linus.unnebäck.se)",
-        "Thijs Busser <tbusser@gmail.com> (http://tbusser.net)",
-        "Titus <tituswormer@gmail.com> (wooorm.com)"
-    ],
-    "repository": "jonschlinkert/repeat-string",
-    "bugs": {
-        "url": "https://github.com/jonschlinkert/repeat-string/issues"
-    },
+    "homepage": "https://github.com/MegandeRuig/Project-Tech",
+    "author": "Megan de Ruig (http://github.com/MegandeRuig)",
+    "repository": "https://github.com/MegandeRuig/Project-Tech",
     "license": "MIT",
     "files": [
-        "index.js"
+        "server.js"
     ],
-    "main": "index.js",
+    "main": "server.js",
     "engines": {
         "node": ">=0.10"
     },
@@ -76,6 +66,8 @@
     },
     "dependencies": {
         "camelcase": "^6.3.0",
-        "express": "^4.17.2"
+        "express": "^4.17.2",
+        "express-handlebars": "^6.0.2",
+        "handlebars": "^4.7.7"
     }
 }
