@@ -3,4 +3,6 @@
 ---
 
 ## Inleiding
-Welkom in de README.md van de Valorant Matching App! Deze app wordt ontworpen met als doel om de Valorant spelers gemakkelijker aan een 5 stack te helpen. De app zal geheel gemaakt worden in de style van de game. De app zal ervoor zorgen dat gebruikers met elkaar gematched worden op zowel rank, gespeelde agents, mic / geen mic als leeftijd. Hierdoor kunnen er meer geschikte 5 stacks ontstaan dan tijdens een willekeurige qeue in de game zelf.
+Welkom in de README.md van de Valorant Matching App! Deze app wordt ontworpen met als doel om de Valorant spelers gemakkelijker aan een 5 stack te helpen. De app zal geheel gemaakt worden in de style van de game. De app zal ervoor zorgen dat gebruikers met elkaar gematched worden op zowel rank, gespeelde agents, mic / geen mic als leeftijd. Hierdoor kunnen er meer geschikte 5 stacks ontstaan dan tijdens een willekeurige qeue in de game zelf. 
+
+De feature van de app die zal worden uitgewerkt is de registreer en login functie waarbij users zich kunnen aanmelden met hun username, email en wachtwoord. En vervolgens hiermee kunnen inloggen.
