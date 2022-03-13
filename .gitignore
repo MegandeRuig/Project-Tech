@@ -3,3 +3,4 @@ node_modules
 .gitignore
 .wiki
 .DS_Store
+.eslintrc.json
