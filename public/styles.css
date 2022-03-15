@@ -85,9 +85,6 @@ main form label {
     margin-left: 2em;
 }
 
-
-
-
 #register-form input:last-of-type {
     margin-top: 1em;
     background-color: var(--primary-color);

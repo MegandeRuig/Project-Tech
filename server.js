@@ -22,6 +22,7 @@ mongoose.connect("mongodb+srv://Megan:MongoDev1.@cluster0.bse9g.mongodb.net/myFi
 
 // JWT (Tokens voor users)
 const jwt = require('jsonwebtoken');
+const { contentType } = require('express/lib/response');
 const JWT_TOKENS = 'hjfdsaioajhbdfg(*&*iuofhjgiogjfkngdmlmvcoppojgsijo$@%HJAFAJHFfbsjfjb('
 
 // Port Localhost
@@ -102,16 +103,15 @@ app.post("/login", async (req, res) => {
       }
       
         //actie wanneer het account gevonden is
-        console.log("ingelogd");
-        res.json({
-          message: 'Ingelogd'
-        })
+        console.log("ingelogd"),
+        res.render('confirm');
 
     });
   } catch (error) {
     (error);
   }
 });
+
 
 // Server port
 
