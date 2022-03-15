@@ -29,6 +29,8 @@ Vervolgens is het tijd om gebruik te maken van het project dit kan gedaan worden
 ### 4. Gebruik
 Nadat het project is opgestart kan het gevonden worden op de localhost:8000 of kan het project gevonden worden op Heroku.
 
+`Heroku: https://projecttechmegan.herokuapp.com/`
+
 ## License
 
 Copyright 2022 Megan de Ruig
