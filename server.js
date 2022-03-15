@@ -26,7 +26,7 @@ const { contentType } = require('express/lib/response');
 const JWT_TOKENS = 'hjfdsaioajhbdfg(*&*iuofhjgiogjfkngdmlmvcoppojgsijo$@%HJAFAJHFfbsjfjb('
 
 // Port Localhost
-const port = 8000;
+const PORT = process.env.PORT || 8000;
 
 // App use
 app.engine('handlebars', exphbs.engine());
@@ -115,6 +115,6 @@ app.post("/login", async (req, res) => {
 
 // Server port
 
-app.listen(port, () =>{
-  console.log(`Server started on port ${port}`);
+app.listen(PORT, () =>{
+  console.log(`Server started on port ${PORT}`);
 });
