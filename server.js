@@ -36,7 +36,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.use(express.static('public'));
 
 // Routing
 app.get('/', function (req, res) {

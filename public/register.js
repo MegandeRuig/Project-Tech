@@ -1,4 +1,4 @@
-// Register Function
+// Register Function --> Data wordt opgehaald uit form en naar backend gestuurd
 
 window.onload=function(){
     const form = document.getElementById('register-form')
