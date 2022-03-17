@@ -1,3 +1,7 @@
+document.getElementById('registerButton').onclick = function() {
+    this.value = "Klaar!";
+}
+
 // Register Function --> Data wordt opgehaald uit form en naar backend gestuurd
 
 window.onload=function(){
@@ -12,6 +16,10 @@ async function registerUser(event) {
     const email = document.getElementById('email').value
     const password = document.getElementById('password').value
 
+    const aangemaakt = document.getElementById('registerButton')
+
+    aangemaakt.classList.add("aangemaakt")
+
     const res = await fetch('/api/register', {
         method: 'POST',
         headers: {
@@ -25,4 +33,6 @@ async function registerUser(event) {
     }).then((res) => res.json())
 
     console.log(res)
+    
 }
+

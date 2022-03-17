@@ -102,8 +102,8 @@ app.post("/login", async (req, res) => {
       }
       
         //actie wanneer het account gevonden is
-        console.log("ingelogd"),
-        res.render('confirm');
+        console.log("ingelogd")
+        
 
     });
   } catch (error) {

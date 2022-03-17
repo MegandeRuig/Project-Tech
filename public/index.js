@@ -1,4 +1,7 @@
 // Login function
+document.getElementById('LoginButton').onclick = function() {
+    this.value = "Ingelogd";
+}
 
 window.onload=function(){
     const form = document.getElementById('login-form')
@@ -10,6 +13,11 @@ async function login(event) {
     event.preventDefault()
     const username = document.getElementById('username').value
     const password = document.getElementById('password').value
+
+    const loggedin = document.getElementById('LoginButton')
+
+    loggedin.classList.add("loggedin")
+
 
     const res = await fetch("/login", {
         method: 'POST',

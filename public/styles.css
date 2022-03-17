@@ -146,6 +146,16 @@ form input:placeholder-shown {
     padding-right: 3em;
     font-size: 1.2em;
 }
+
+.loggedin {
+    margin-top: 1em !important;
+    background-color: var(--form-color) !important;
+    border: 0.1em var(--primary-color) solid !important;
+    color: var(--primary-color) !important;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 1.2em;
+}
  
 /* Information page*/
 
@@ -227,6 +237,16 @@ form input:placeholder-shown {
     padding-left: 2em;
     padding-right: 2em;
     padding: 0.5em;
+    font-size: 1.2em;
+}
+
+.aangemaakt {
+    margin-top: 1em !important;
+    background-color: var(--form-color) !important;
+    border: 0.1em var(--primary-color) solid !important;
+    color: var(--primary-color) !important;
+    padding-left: 3em;
+    padding-right: 3em;
     font-size: 1.2em;
 }
  
