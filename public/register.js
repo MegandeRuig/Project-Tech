@@ -1,3 +1,13 @@
+// Copy API
+
+const CopyButton = document.getElementById("copyButton");
+const username = document.getElementById('username').value;
+
+CopyButton.addEventListener('click', () => {
+    navigator.clipboard.writeText(username.value)
+    console.log("Username copied!")
+})
+
 document.getElementById('registerButton').onclick = function() {
     this.value = "Klaar!";
 }
