@@ -117,3 +117,37 @@ main section section button {
 input:not(:placeholder-shown) {
     border-color: green;
 }
+
+#homepage main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: var(--form-color);
+    padding: 1em;
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+#homepage h2 {
+    text-align: center;
+}
+
+#homepage button {
+    color: var(--form-color);
+    background-color: var(--primary-color);
+    margin-top: 5%;
+    border: none;
+    padding: 0.7em 1em 0.7em 1em;
+    width: 30%;
+    font-size: 12pt;
+    font-weight: 800;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#homepage a {
+    text-align: center;
+    margin-top: 10%;
+}
