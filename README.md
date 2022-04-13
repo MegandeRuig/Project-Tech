@@ -27,7 +27,7 @@ Vervolgens is het tijd om gebruik te maken van het project dit kan gedaan worden
 'node server.js'
 
 ### 4. Gebruik
-Nadat het project is opgestart kan het gevonden worden op de localhost:8000 of kan het project gevonden worden op Heroku.
+Nadat het project is opgestart kan het gevonden worden op de localhost:3000/login of kan het project gevonden worden op Heroku.
 
 `Heroku: https://projecttechmegan.herokuapp.com/`
 
