@@ -2,7 +2,7 @@
 const express = require("express");
 const handlebars = require("express-handlebars");
 const db = require("../config/connect.js"); //verbinding mongoDB
-const userModel = require("../models/user");
+const userModel = require("../models/User");
 const multer = require("multer");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
