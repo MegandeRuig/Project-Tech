@@ -1,0 +1,63 @@
+<body>
+
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+
+            <form id="login-form" action="/login/done" method="POST" enctype="multipart/form-data">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email@dievanjou.nl" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="● ● ● ● ●" required>
+
+                <input id="LoginButton" type="submit" value="Login" href="index.hbs">
+            </form>
+
+            <section>
+                <h3>No account?</h3>
+                <button id="signupButton">Sign up here</button>
+            </section>
+
+            <article>
+                <p>
+                    When you use our services, you're trusting us with your
+                    information. We understand this is a big responsibility
+                    and work hard to protect your information and put you in
+                    control.
+                </p>
+            </article>
+
+        </section>
+
+        <section id="register">
+            <h2>Register</h2>
+
+            {{#if userExists}}
+            <h3>user already exists!</h3>
+            {{/if}}
+
+            <form id="register-form" action="/login/register/done" method="POST" enctype="multipart/form-data">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email@dievanjou.nl" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="● ● ● ● ●" required>
+
+                <input id="RegisterButton" type="submit" value="Create Account" href="index.hbs">
+            </form>
+
+            <section>
+                <h3>Already have an account?</h3>
+                <button id="loginButton">Log in</button>
+            </section>
+
+
+        </section>
+
+    </main>
+</body>
+<script src="../public/js/script.js"></script>
