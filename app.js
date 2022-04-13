@@ -40,12 +40,10 @@ app.use(minify());
 app.use(express.static(__dirname + '/public'));
 
 // setup van port. post is http://localhost:3000/
-//let port = process.env.PORT;
-//if (port == null || port == "") {
-//  port = 3000;
-//}
-
-const port = process.env.port || 3000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
 // handlebars setup
 app.engine(
