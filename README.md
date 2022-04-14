@@ -24,12 +24,12 @@ Om dit project te laten runnen zijn er een aantal NPM packages nodig. Deze staan
 ### 3. Run de code
 Vervolgens is het tijd om gebruik te maken van het project dit kan gedaan worden gebruik te maken van het commando:
 
-'node server.js'
+'node app.js'
 
 ### 4. Gebruik
 Nadat het project is opgestart kan het gevonden worden op de localhost:3000/login of kan het project gevonden worden op Heroku.
 
-`Heroku: https://projecttechmegan.herokuapp.com/`
+`Heroku: https://projecttechher.herokuapp.com/login`
 
 ## License
 
